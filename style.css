@@ -1,0 +1,126 @@
+/* CSS Reset */
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+
+}
+
+/* Cabeçalho */
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li{
+    list-style: none; 
+}
+a{
+    text-decoration: none;
+    cursor: pointer; 
+    opacity: 0.8; 
+}
+a:hover{
+    opacity: 1; 
+}
+
+header {
+    background-color: #d01a38;
+    top: 0; 
+    left: 0; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px 30px;
+
+}
+header img {
+    width: 100px; 
+}
+header nav {
+    display: flex; 
+}
+header li a {
+    color: rgb(91, 13, 1);
+    font-size: 20px;
+}
+header li {
+    margin: 15px; 
+}
+
+    /* Logo */
+
+    .item0 {
+        margin: 5px;
+        height: 200px;
+        text-align: center;
+        padding: 25px;
+        background-image: url(Imagemfundo1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    /* Texto */
+
+    .item1 {
+        margin: 5px;
+        height: 510px;
+        padding: 20px;
+        background:bisque;
+        text-align: left;
+        font-size: 1,5em;
+       
+    }
+
+    /* Vídeo */
+
+    .item2 {
+        height: 600px;
+        /*background: bisque;*/
+        text-align: center;
+        padding: 100px;
+        background-image: url(ImagemFundo2.png); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    /* Rodapé */
+        
+    .item3 {
+        margin: 5px;
+        height: 33px;
+        width: 1238px;
+        background: bisque;
+        text-align: center;
+        font-size: 0,5em;
+    }
+
+    /* Container */
+    
+    .container {
+        max-width: 1800px;
+        margin: 0 auto;
+        height: 1378px;
+        border: 10px solid rgb(108, 15, 1);
+        }
+
+        p {
+        text-align: left;
+        margin: 5px 0 0 0;
+        padding: 3px;
+        font-size: 1.50em;
+        font-weight: normal;
+        }
+
+        body {
+        font-family: monospace;
+        color:#d01a38;
+        }             
+  
+
+
+
+    
+
+    

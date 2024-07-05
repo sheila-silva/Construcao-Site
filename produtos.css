@@ -1,0 +1,228 @@
+/* Reset CSS */
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+
+}
+
+/* Cabeçalho */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li{
+    list-style: none; 
+}
+a{
+    text-decoration: none;
+    cursor: pointer; 
+    opacity: 0.8; 
+}
+a:hover{
+    opacity: 1; 
+}
+
+header {
+    background-color:  #d01a38;
+    top: 0; 
+    left: 0; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px 30px;
+
+}
+header img {
+    width: 100px; 
+    height: 100px;
+    
+}
+header nav {
+    display: flex; 
+}
+header li a {
+    color: rgb(91, 13, 1);
+    font-size: 20px;
+}
+header li {
+    margin: 13px; 
+}
+
+    /* Título */
+
+        .item0 {
+        margin: 5px;
+        height: 200px;
+        text-align: center;
+        font-size: 5em;
+        color: yellow;
+        padding: 50px;
+        background-image: url(Handmade3.png); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    /* Texto */
+
+        .item1 {
+            margin: 5px;
+            height: 200px;
+            text-align: center;
+            font-size: 1em;
+            color:  #d01a38;
+            padding: 30px;
+            background-color: bisque; 
+
+        p0 {
+            color:#ec4b4b;
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            
+            
+        }
+    
+
+    /* Produtos */
+
+    h1 {
+        color: bisque;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    
+
+    img {
+        display: block;
+        width: 130px;
+        height: 150px;
+
+    }
+
+    .produtos {
+        background-color: #d01a38;
+        display: flex;
+        flex-wrap: wrap;
+        width: 1232px;
+        margin: 0 auto;
+
+    }
+
+    .produtos > div {
+        background-color: #d01a38;
+        flex: 1 1 200px;
+        margin: 10px;
+
+    }
+
+    
+
+    /* Formulário */
+
+    form {
+        width: 500px;
+        margin: left;
+        
+    }
+
+    input:hover, textarea:hover{
+        background-color: #dddddd;
+    }
+
+    p {
+        text-align: left;
+        margin: 5px 0 0 0;
+        padding: 3px;
+        font-size: 1.50em;
+        font-weight: normal;
+        }
+
+
+    /* Rodapé */
+
+    .item2 {
+        width: 1238px;
+        margin: 5px;
+        height: 31px;
+        color: #d01a38;
+        background: bisque;
+        text-align: center;
+        font-size: 0,5em;
+    }
+
+    /* Container */
+
+    .container {
+        max-width: 1800px;
+        margin: 0 auto;
+        height: 2040px;
+        border: 10px solid rgb(108, 15, 1);
+    }
+
+        
+        
+
+
+    
+
+
+    
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
