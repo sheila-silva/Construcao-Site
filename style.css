@@ -24,7 +24,7 @@ a:hover{
 }
 
 header {
-    background-color: #d01a38;
+    background-color: #d01a38;;
     top: 0; 
     left: 0; 
     display: flex; 
@@ -66,7 +66,7 @@ header li {
         margin: 5px;
         height: 510px;
         padding: 20px;
-        background:bisque;
+        background: #fff;
         text-align: left;
         font-size: 1,5em;
        
@@ -91,7 +91,7 @@ header li {
         margin: 5px;
         height: 33px;
         width: 1238px;
-        background: bisque;
+        background: #fff;
         text-align: center;
         font-size: 0,5em;
     }

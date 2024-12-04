@@ -70,9 +70,9 @@ header li {
             height: 200px;
             text-align: center;
             font-size: 1em;
-            color:  #d01a38;
+            color:  #fff;
             padding: 30px;
-            background-color: bisque; 
+            background-color: #fff; 
 
         p0 {
             color:#ec4b4b;
@@ -87,7 +87,7 @@ header li {
     /* Produtos */
 
     h1 {
-        color: bisque;
+        color:#d01a38;
         font-size: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
@@ -102,7 +102,7 @@ header li {
     }
 
     .produtos {
-        background-color: #d01a38;
+        background-color:#fff;
         display: flex;
         flex-wrap: wrap;
         width: 1232px;
@@ -111,7 +111,7 @@ header li {
     }
 
     .produtos > div {
-        background-color: #d01a38;
+        background-color: #fff;
         flex: 1 1 200px;
         margin: 10px;
 
@@ -147,7 +147,7 @@ header li {
         margin: 5px;
         height: 31px;
         color: #d01a38;
-        background: bisque;
+        background: #fff;
         text-align: center;
         font-size: 0,5em;
     }
@@ -157,8 +157,94 @@ header li {
     .container {
         max-width: 1800px;
         margin: 0 auto;
-        height: 2040px;
+        height: 4040px;
         border: 10px solid rgb(108, 15, 1);
+    }
+    
+
+    /*Card*/
+
+    .containerCard {
+
+        display: flex;
+        justify-content:center;
+
+
+    }
+
+    .card {
+
+        width: 10px;
+        height: 30px;
+        border-radius: 15px;
+        margin-top: 10px;
+        background-color: rgb(214, 22, 22);
+
+    }
+
+    .image {
+
+        display:flex;
+        justify-content: center;
+
+    }
+
+    .Promocao {
+
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+
+    .text-main {
+
+        text-align: center;
+        color: #fff;
+        font-weight: 20;
+        font-size: 25px;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    .desc {
+        font-family:'Courier New', Courier, monospace;
+        color:#e21f1f;
+        font-weight: 10px;
+        text-align: center;
+        font-size: 15px;
+
+
+    }
+
+    .btn {
+        padding: 10px 30px;
+        font-family:'Courier New', Courier, monospace;
+        font-size: 15px;
+        font-weight: 10px;
+        border-radius: 10px;
+        border: none;
+        transition: 1s;
+        background-color: #dddddd;
+        color:#fff;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        transition: 1s;
+        background-color: #dddddd;
+        color:#fff;
+
+
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+
     }
 
         
