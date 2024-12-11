@@ -118,31 +118,44 @@ header li {
     }
 
     
-
     /* Formulário */
 
     form {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
         width: 500px;
-        margin: left;
-        
+        margin: 0 auto;
+        margin-top: 40px;
     }
 
-    input:hover, textarea:hover{
-        background-color: #dddddd;
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+
     }
 
-    p {
-        text-align: left;
-        margin: 5px 0 0 0;
-        padding: 3px;
-        font-size: 1.50em;
-        font-weight: normal;
-        }
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        font-size: 1.1rem;
+    }
+
+    button {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #d01a38;
+        color: #fff;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
 
 
     /* Rodapé */
 
-    .item2 {
+    .item4 {
         width: 1238px;
         margin: 5px;
         height: 31px;
@@ -168,15 +181,19 @@ header li {
 
         display: flex;
         justify-content:center;
+        padding: 50px;
+        margin-bottom: 0px;
 
 
     }
 
+
+
     .card {
 
-        width: 10px;
-        height: 30px;
-        border-radius: 15px;
+        width: 200px;
+        height: 300px;
+        border-radius: 50px;
         margin-top: 10px;
         background-color: rgb(214, 22, 22);
 
@@ -191,10 +208,14 @@ header li {
 
     .Promocao {
 
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
+        display: flex;
+        width: 100px;
+        height: 100px;
+        border-radius: 20%;
         margin-top: 20px;
+        margin-left: 45px;
+        
+        
     }
 
     .text-main {
@@ -209,10 +230,10 @@ header li {
 
     .desc {
         font-family:'Courier New', Courier, monospace;
-        color:#e21f1f;
+        color:#fff;
         font-weight: 10px;
         text-align: center;
-        font-size: 15px;
+        font-size: 13px;
 
 
     }
@@ -220,20 +241,20 @@ header li {
     .btn {
         padding: 10px 30px;
         font-family:'Courier New', Courier, monospace;
-        font-size: 15px;
+        font-size: 17px;
         font-weight: 10px;
         border-radius: 10px;
         border: none;
-        transition: 1s;
-        background-color: #dddddd;
-        color:#fff;
+        transition: 0,5s;
+        background-color: #fff;
+        color: #d01a38;
         cursor: pointer;
 
     }
 
     .btn:hover {
-        transition: 1s;
-        background-color: #dddddd;
+        transition: 0.5s;
+        background-color: #ec7e68;
         color:#fff;
 
 
@@ -242,17 +263,322 @@ header li {
     .button {
         display: flex;
         justify-content: center;
-        margin-top: 30px;
+        margin-top: 20px;
+    }
 
+    
+    
+    /* Carrossel */
+
+    body {
+        align-items: center;
+        background: #E3E3E3;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+    }
+    
+    @mixin white-gradient {
+        background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    }
+    
+    $animationSpeed: 40s;
+    
+    /*Animation*/
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-250px * 7))}
+    }
+    
+    
+    /*Styling*/
+    .slider {
+        background: white;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+        height: 100px;
+        margin: auto;
+        overflow:hidden;
+        position: relative;
+        width: 960px;
+        
+        &::before,
+        &::after {
+            @include white-gradient;
+            content: "";
+            height: 100px;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+        }
+        
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+    
+        &::before {
+            left: 0;
+            top: 0;
+        }
+        
+        .slide-track {
+            animation: scroll $animationSpeed linear infinite;
+            display: flex;
+            width: calc(250px * 14);
+        }
+        
+        .slide {
+            height: 100px;
+            width: 250px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*.body {
+        background-color: rgb(255, 235, 235);
+    }
+
+    Estilos do conteiner. centraliza conteúdo, define a largura e altura con conteiner
+    .containerc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 800px;
+        height: 600px;
+    }
+
+    .main-heading {
+        padding: 2rem 0 2rem 0;
+    }
+
+    .contentc {
+        position: relative;
+    }
+
+    Estilos do conteúdo do carrossel
+    Coloca o conteúdo do carrossel no centro do carrossel
+
+    .carousel-content {
+        position: absolute;
+
+    Para centralizar o conteúdo horizontalmente e na vertical
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+    }
+
+    .carrousel-heading {
+        font-size: 3rem;
+        color: wheat;
+        margin-bottom: 1rem;
+    }
+
+    slideshow configurações 
+    .slideshow {
+        height: 100%;
+        overflow: hidden;
+    
+    para ocultar slides da direção x 
+        position: relative;
 
     }
 
-        
-        
-
-
+    wrapper que envolve todos os estilos de imagens de apresentação de slides 
+    .slideshow-wrapper {
+        display: flex;
     
 
+    para colocar mais imagens, aumentar o width
+        width: 600px;
+        height: 100%;
+        position: relative;
+        
+    
+
+    alterar as configurações de animação
+        animation: slideshow 20s infinite;
+
+    }  
+
+    definir largura e altura para imagens
+    .slide {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .slide-img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .slide-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    @keyframes são usados para fornecer
+    @keyframes slideshow {
+        0% {
+            left: 0;
+
+        }
+
+        10% {
+            left: -100px;
+        }
+        
+        20% {
+            left: -100px;
+        }
+
+        25% {
+            left: -200%;
+        }
+
+        30% {
+            left: -200px;
+        }
+
+        40% {
+            left: -300px;
+        }
+
+        50% {
+            left: -300px;
+        }
+
+        60% {
+            left: -400px;
+        }
+
+        70% {
+            left: -400px;
+        }
+
+        80% {
+            left: -500px;
+        }
+
+        90% {
+            left: -500px;
+        }
+
+    }
+
+    estilos dos botões de controle do carrossel
+
+    .slide-btn {
+        background-color: #fff;
+        border-radius: 50%;
+        border: .2rem solid #d38800;
+        width: 1.2rem;
+        height: 1.2rem;
+        outline: none;
+        cursor: pointer;
+    
+
+    estilos para posicionar os botões na parte inferior do carrossel
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 70;
+
+    }
+
+    Como fornecemos a posição absoluta, os botões são colocados um sobre o outro, assim temos que colocá-los individualmente em suas posições corretas
+    .slide-btn-1{
+        left: 45%;
+    }*/
 
     
 

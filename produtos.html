@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Logo_Amigurumi.png" type="image/x-icon">
     <link rel="stylesheet" href="produtos.css"/>
+
     <title>Produtos</title>
 </head>
 
@@ -128,17 +129,45 @@
     
     </section>
 
-    <!--Card-Produto-->
 
-    <div class="containerCard">
+    <!--Formulário-->
+
+    <form id="form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email">
+
+        <label for="job">Deseja mais de um boneco?</label>
+        <select name="job" id="job">
+            <option value="">Desconto segundo boneco.</option>
+            <option value="yes">Sim</option>
+            <option value="no">Não</option>
+        </select>
+
+        <label for="message">Mensagem:</label>
+        <textarea name="message" id="message"></textarea>
+
+        <button type="submit">Enviar</button>
+
+
+    </form>
+
+
+     <!--Card-Produto-->
+
+     <div class="containerCard">
 
         <div class="card">
             <div class="imagem">
                 <img class="Promocao" src="Promocao.jpg" alt="Promocao.jpg">
             </div>
             <div class="texto">
-                <h2 class="text-main">Promoção</h2>
-                <p class="desc">hOHSOBABIABSDAVADVA</p>
+                <h2 class="text-main">Promoção 1</h2>
+                <p class="desc">Você gostou da família de coelhinhos? Aproveita e peça a sua,
+                    ela está em promoção!!!
+                </p>
             </div>
 
             <div class="button">
@@ -150,92 +179,125 @@
         </div>
 
     </div>
-   
 
-    <!--Formulário-->
+    <!--Carrossel-->
 
-    <section>
-        <form method="post" id="fContato" action="mailto:amigurumilu24@gmail.com">
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+            </div>
+        </div>
+    </div>
 
-        <!--Dados Cliente-->
-
-            <fieldset id="usuario"><legend>Dados Cliente</legend>
-
-            <p><label for="cNome">Nome:</label>
-            <input type="text" name="tNome" id="cNome" size="110" maxlength="90" placeholder="Nome Completo"/></p>
-            
-            <p><label for="cMail">E-mail:</label>
-            <input type="email" name="tMail" id="cMail" size="20" maxlength="40"/></p>
-            
-            <p><label for="cTel">Telefone com código do País e DDD:</label>
-            <input type="text" name="tNum" id="cNum" size="25" maxlength="30" placeholder="+ código país, DDD, Telefone"/></p></fieldset>
 
 
-        <!--Endereço Completo-->
 
-            <fieldset id="endereco"><legend>Endereço Completo</legend>
-            
-            <p><label for="cPais">País:</label>
-            <input type="text" pais="tPais" id="cPais" size="30" maxlength="40"/></p>
-            
-            <p><label for="cEstado">Estado:</label>
-            <input type="text" estado="tEstado" id="cEstado" size="30" maxlength="40"/></p>
-            
-            <p><label for="cCidade">Cidade:</label>
-            <input type="text" cidade="tCidade" id="cEstado" size="40" maxlength="50"/></p>
-            
-            <p><label for="cBairro">Bairro:</label>
-            <input type="text" bairro="tBairro" id="cBairro" size="10" maxlength="15"/></p>
-            
-            <p><label for="cRua">Rua:</label>
-            <input type="text" name="tRua" id="cRua" size="40" maxlength="80" placeholder="Rua, Av, Trav, ... "/></p>
-            
-            <p><label for="cNumero">Número Casa ou Apartamento:</label>
-            <input type="number" name="tNumero" id="cNumero" min="0" max="99999"/></p>
-            
-            <p><label for="cComplemento">Complemento:</label>
-            <input type="text" name="tComplemento" id="cComplemento" size="10" maxlength="15"/></p>
-            
-            
-            <p><label for="cCodigo">Código Postal:</label>
-            <input type="text" name="tCodigo" id="cCodigo" min="0" max="9999999999999" placeholder="Somente números"/></p>
-        
-            </fieldset></form>
-
-        <!--Pedido-->
-
-            <fieldset id="Pedido"><legend>Pedido</legend>
-
-            <p><label for="cPedido">Qual Amigurumi deseja encomendar presente neste site?</label>
-            <input type="text" name="tPedido" id="cPedido" size="80" maxlength="80"/></p>
-            
-            <p><label for="cQuantidade">Quantidade:</label>
-            <input type="number" name="tQuantidade" id="cQuantidade" min="999999" max="999999" maxlength="2" placeholder="Max 10"/></p>
-            
-            <p><label for="cCustomizado">Pedido Customizado:</label>
-            <textarea name="tCustomizado" id="cCustomizado" cols="45" rows="5" placeholder="Pedido Customizado"></textarea>
-            
-
-            <p><label for="cQuantidade">Quantidade:</label>
-                <input type="number" name="tQuantidade" id="cQuantidade" min="999999" max="999999" maxlength="2" placeholder="Max 10"/></p>
-            
-            </fieldset>
-
-            <input type="submit" value="Enviar"/>
+    <!--<div class="containerc">
         
 
-    
-        </form>
+       
+        <div class="contentc">
 
-    </section>
+        Texto do Carrosel
+        <div class="carousel-content">
+            <h1 class="carousel-heading">
+                Figura 1
+            </h1>
+
+
+        </div>
+        <div class="slideshow">
+
+        botões de controle carrousel
+        <button class="slide-btn slide-btn-1"></button>
+        <button class="slide-btn slide-btn-2"></button>
+        <button class="slide-btn slide-btn-3"></button>
+        <button class="slide-btn slide-btn-4"></button>
+        <button class="slide-btn slide-btn-5"></button>
+        <button class="slide-btn slide-btn-6"></button>
+
+
+        container do carrossel que contem as imagens
+        <div class="slideshow-wrapper">
+            <div class="slide">
+                <img class="slide-img"
+                src="tartaruga.png">
+            </div>
+            <div class="slide">
+                <img class="slide-img"
+                src="tartaruga.png">
+            </div>
+            <div class="slide">
+                <img class="slide-img"
+                src="tartaruga.png">
+            </div>
+            <div class="slide">
+                <img class="slide-img"
+                src="tartaruga.png">
+            </div>
+
+
+
+        </div>
+
+
+        </div>
+
+
+    </div>-->
+
 
     <!--Rodapé-->
 
     <footer>
     </div>
-    <div class="item2">Feito por Sheila Silva.</div>
+    <div class="item4">Feito por Sheila Silva.</div>
     </footer>
-    
+
+
+    <!--Script Formulário-->
+
+    <script src="produtos.js"></script>
 
 
 </body>
