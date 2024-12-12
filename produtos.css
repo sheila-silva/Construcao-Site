@@ -156,13 +156,17 @@ header li {
     /* Rodapé */
 
     .item4 {
+        
         width: 1238px;
         margin: 5px;
-        height: 31px;
+        height: 33px;
         color: #d01a38;
-        background: #fff;
+        background:#fff;
         text-align: center;
         font-size: 0,5em;
+        margin: auto;
+        margin-top: 50px;
+
     }
 
     /* Container */
@@ -270,7 +274,127 @@ header li {
     
     /* Carrossel */
 
-    body {
+    
+    figure {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        min-height: 100vh;
+        
+    }
+
+    /*container do carrossel*/
+
+    .carrossel {
+        box-shadow: 2px 2px 4px rgb(226, 43, 86);
+        overflow: hidden;
+        height: 145px;
+        width: 145px;
+        margin-left: 768px;
+    }
+
+    /* container onde as figuras passam*/ 
+
+    .containerM {
+        display:flex;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
+        height: 500px;
+        width: 500px;
+       
+
+    }
+
+    imgA {
+        object-fit: cover;
+        height: 400px;
+        width: 400px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*body {
+        align-items: center;
+        background: #E3E3E3;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+    }
+    
+    @keyframes scrolling {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-250px * 7));
+        }
+    }
+    
+    .slider {
+        background: white;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+        height: 100px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 200px;
+    }
+    
+    .slider::before,
+    .slider::after {
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        content: "";
+        height: 100px;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+    }
+    
+    .slider::before {
+        left: 0;
+        top: 0;
+    }
+    
+    .slider::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+    
+    .slide-track {
+        animation: scrolling linear infinite 40s;
+        display: flex;
+        width: calc(250px * 14);
+    }
+    
+    .slide {
+        height: 100px;
+        width: 250px;
+    }
+    
+
+
+
+
+
+    /*body {
         align-items: center;
         background: #E3E3E3;
         display: flex;
@@ -282,17 +406,17 @@ header li {
         background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
     }
     
-    $animationSpeed: 40s;
+    $animationSpeed: 40s;*/
     
     /*Animation*/
-    @keyframes scroll {
+    /*@keyframes scroll {
         0% { transform: translateX(0); }
         100% { transform: translateX(calc(-250px * 7))}
-    }
+    }*/
     
     
     /*Styling*/
-    .slider {
+    /*.slider {
         background: white;
         box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
         height: 100px;
@@ -332,7 +456,7 @@ header li {
             height: 100px;
             width: 250px;
         }
-    }
+    }*/
 
 
 

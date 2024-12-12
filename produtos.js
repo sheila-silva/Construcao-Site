@@ -1,3 +1,27 @@
+//carrossel
+
+const imgs = document.getElementById ("imgA");
+const imgA = document.querySelectorAll("#imgA imgA");
+
+let idx = 0;
+
+function carrossel() {
+    idx++;
+
+    if(idx > imgA.length -1) {
+        idx = 0;
+    }
+
+    imgs.style.transform = `translateX($(-idx * 500)px)`;
+
+}
+
+setInterval(carrossel, 1800);
+
+
+
+
+// formulário 
 
 const form = document.querySelector("#form");
 const nameInput = document.querySelector("#name");
