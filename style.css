@@ -39,7 +39,7 @@ header nav {
     display: flex; 
 }
 header li a {
-    color: rgb(91, 13, 1);
+    color: rgb(100, 12, 8);
     font-size: 20px;
 }
 header li {
@@ -72,11 +72,10 @@ header li {
        
     }
 
-    /* Vídeo */
+    /* Imagem por detras do vídeo */
 
     .item2 {
         height: 600px;
-        /*background: bisque;*/
         text-align: center;
         padding: 100px;
         background-image: url(ImagemFundo2.png); 
@@ -85,15 +84,22 @@ header li {
         
     }
 
+   
+
     /* Rodapé */
         
     .item3 {
+       
+        width: 1238px;
         margin: 5px;
         height: 33px;
-        width: 1238px;
-        background: #fff;
+        color: #b91d1d;
+        background:#fff;
         text-align: center;
         font-size: 0,5em;
+        margin: auto;
+        margin-top: 60px;
+
     }
 
     /* Container */
@@ -102,7 +108,7 @@ header li {
         max-width: 1800px;
         margin: 0 auto;
         height: 1378px;
-        border: 10px solid rgb(108, 15, 1);
+        border: 10px solid rgb(254, 254, 254);
         }
 
         p {
@@ -118,7 +124,68 @@ header li {
         color:#d01a38;
         }             
   
+        
+        /*responsividade*/
 
+        @media screen and (max-width: 1020px) {
+
+            /* cabeçalho */
+
+            .header {
+             flex-direction: column;
+            } 
+        
+            /* título produto */
+
+            .item0 {
+                font-size: 50px;
+            }
+            /* texto */
+
+            .item1 {
+                font-size: 10px;
+            }
+
+            .item2 {
+                
+                margin-top: 200px;
+                height: 400px;
+              
+             }
+
+
+            /* video */
+
+            iframe {
+                flex-direction: column;
+                width: 250px;
+                height: 150px;
+                margin-top: 20px;
+                margin-right: 900px;
+                padding-right: 90px;
+               
+            }
+  
+
+        } 
+
+        /* rodapé */
+
+        @media (max-width: 576px){
+
+        .item3 {
+            font-size: 12px;
+            padding: 8px;
+            width: 300px;
+            margin: 5px;
+            height: 33px;
+            text-align: center;
+            margin: auto;
+            margin-top: 60px;
+
+        }
+
+    }
 
 
     
