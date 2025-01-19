@@ -1,0 +1,385 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Cabeçalho */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+header {
+    background-color: #d01a38;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+
+}
+
+header nav {
+    display: flex;
+}
+
+header li a {
+    color: rgb(91, 13, 1);
+    font-size: 20px;
+}
+
+header li {
+    margin: 13px;
+}
+
+/* Título */
+
+.item0 {
+    margin: 5px;
+    height: 200px;
+    text-align: center;
+    font-size: 5em;
+    color: yellow;
+    padding: 50px;
+    background-image: url(./../images/Handmade3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* Texto */
+
+.item1 {
+    margin: 5px;
+    height: 200px;
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    color: #ec4b4b;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    p0 {
+        color: #ec4b4b;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+
+}
+
+
+/* Produtos */
+
+h1 {
+    color: #d01a38;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+img {
+    display: block;
+    width: 130px;
+    height: 150px;
+
+}
+
+.produtos {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1232px;
+    margin: 0 auto;
+
+}
+
+.produtos>div {
+    background-color: #fff;
+    flex: 1 1 200px;
+    margin: 10px;
+
+}
+
+
+/* Formulário */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 1.1rem;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d01a38;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+
+/* Rodapé */
+
+.item4 {
+    width: 1238px;
+    margin: 5px;
+    height: 33px;
+    color: #b91d1d;
+    background: #fff;
+    text-align: center;
+    font-size: 0, 5em;
+    margin: auto;
+    margin-top: 60px;
+}
+
+
+/* Container */
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    height: 4040px;
+    border: 10px solid rgb(252, 250, 250);
+}
+
+
+/*Card*/
+
+.containerCard {
+
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin-bottom: 0px;
+
+
+}
+
+.card {
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgb(214, 22, 22);
+
+}
+
+.imagem {
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.Promocao {
+
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    margin-top: 20px;
+    margin-left: -5px;
+
+}
+
+.text-main {
+
+    text-align: center;
+    color: #fff;
+    font-weight: 20px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.desc {
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    font-weight: 10px;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.btn {
+    padding: 10px 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    font-weight: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 0, 5s;
+    background-color: #fff;
+    color: #d01a38;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    transition: 0.5s;
+    background-color: #ec7e68;
+    color: #fff;
+
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+
+/* Carrossel */
+
+
+.carrossel {
+    width: 300px;
+    /* Tamanho visível do carrossel */
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px rgb(226, 43, 86);
+    margin: 0 auto;
+}
+
+/* Container das imagens */
+.containerM {
+    display: flex;
+    animation: slide 8s infinite;
+    /* Animação infinita */
+}
+
+/* Imagens no carrossel */
+.containerM img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    /* Garante que a imagem preencha o tamanho sem distorcer */
+}
+
+/* Animação do carrossel */
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-300px);
+    }
+
+    50% {
+        transform: translateX(-600px);
+    }
+
+    75% {
+        transform: translateX(-900px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* Media queries */
+
+/* Media query para telas pequenas (ex: smartphones) */
+/* a media querie será aplicada quando o tamanho for < que 1020px */
+
+@media screen and (max-width: 1020px) {
+
+    /* cabeçalho */
+
+    .header {
+        flex-direction: column;
+    }
+
+    /* título produto */
+    .item0 {
+        font-size: 50px;
+    }
+
+    /* texto */
+    .item1 {
+        font-size: 18px;
+    }
+
+    /* produtos */
+    .produtos {
+        flex-direction: column;
+    }
+
+    /* formulário */
+    #form {
+        width: 300px;
+    }
+
+}
+
+/* rodapé */
+
+@media (max-width: 576px) {
+
+    .item4 {
+        font-size: 12px;
+        padding: 8px;
+        width: 300px;
+        margin: 5px;
+        height: 33px;
+        text-align: center;
+        margin: auto;
+        margin-top: 60px;
+
+    }
+
+}
